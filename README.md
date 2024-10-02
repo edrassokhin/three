@@ -1,6 +1,6 @@
 # three
 <p>
-Изучение форм
+Работа с формами
 </p>
 <p>
   Ссылка - https://edrassokhin.github.io/three/
