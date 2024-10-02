@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <style>
+        .form-group {
+            width: 100%;
+            background-color: rgb(174, 255, 107);
+            border-radius: 10px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: rgb(65, 65, 65);
+            border-radius: 30px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset class="form-group">
+            <legend>Регистрация</legend>
+            Логин <input type="text" placeholder="Введите логин" name="login"> <br> <br>
+            Пароль <input type="password" placeholder="Введите пароль" name="password"> <br> <br>
+            Почта <input type="email" name="mail">
+        </fieldset>
+        <br>
+        <fieldset class="form-group">
+            <legend>Интересы</legend>
+            <input type="checkbox" name="int" value="music" id="music"> <label for="music">Музыка</label>
+            <br>
+            <label>
+                <input type="checkbox" name="int" value="movie"> Кино
+            </label>
+            <br>
+            <input type="checkbox" name="int" value="cars"> Автомобили
+        </fieldset>
+        <fieldset class="form-group">
+            <legend>Ужин</legend>
+            <input type="radio" name="delivery"> ROSTICS <br>
+            <input type="radio" name="delivery"> Вкусно и точка <br>
+            <input type="radio" name="delivery"> Бургер Кинг
+        </fieldset> <br>
+        <h2>Выбор города</h2>
+        <select name="" id="">
+            <option selected disabled>Укажите город</option>
+            <optgroup label="Сибирь">
+                <option value="t">Тюмень</option>
+                <option value="s">Сургут</option>
+                <option value="ts">Тарко-сале</option>
+            </optgroup>
+            <optgroup label="Кавказ">
+                <option value="m">Махачкала</option>
+                <option value="g">Грозный</option>
+            </optgroup>
+        </select> <br> <br>
+        <textarea class="form-group" name="comment" placeholder="Ваши комментарии"></textarea> <br>
+        <br>
+        <button type="reset">Очистить форму</button> <br> <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
